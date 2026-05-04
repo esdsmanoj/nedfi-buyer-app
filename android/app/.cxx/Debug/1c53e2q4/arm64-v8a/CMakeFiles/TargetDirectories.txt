@@ -1,0 +1,2 @@
+/Users/esds/Documents/ESDS projects/NERACE/nedfi-buyer-app/android/app/.cxx/Debug/1c53e2q4/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/esds/Documents/ESDS projects/NERACE/nedfi-buyer-app/android/app/.cxx/Debug/1c53e2q4/arm64-v8a/CMakeFiles/rebuild_cache.dir

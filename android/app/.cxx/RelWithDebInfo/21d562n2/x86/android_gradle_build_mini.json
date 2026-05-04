@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/esds/Downloads/flutter-2/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/esds/Documents/new_sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/esds/Documents/ESDS projects/NERACE/nedfi-buyer-app/android/app/.cxx/RelWithDebInfo/21d562n2/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/esds/Documents/new_sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/esds/Documents/ESDS projects/NERACE/nedfi-buyer-app/android/app/.cxx/RelWithDebInfo/21d562n2/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

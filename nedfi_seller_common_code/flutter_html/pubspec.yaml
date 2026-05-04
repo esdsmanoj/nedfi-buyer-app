@@ -1,0 +1,63 @@
+name: flutter_html
+description: A Flutter widget for rendering static HTML and CSS as Flutter widgets.
+version: 1.0.0
+
+environment:
+  sdk: '>=2.19.0'
+
+dependencies:
+  # Plugin for parsing html
+  html: ^0.15.4
+
+  # Plugin for parsing css
+  csslib: ^1.0.0
+
+  # Plugin for firstWhereOrNull extension on lists
+  collection: ^1.18.0
+
+  # plugin to manage lists and counting in a variety of styles
+  list_counter: ^1.0.2
+
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints:
+  meta: ^1.12.0
+  melos: ^6.0.0
+  flutter_html_audio: ^3.0.0-beta.2
+  flutter_html_iframe: ^3.0.0-beta.2
+  flutter_html_math: ^3.0.0-beta.2
+  flutter_html_svg: ^3.0.0-beta.2
+  flutter_html_table: ^3.0.0-beta.2
+  flutter_html_video: ^3.0.0-beta.2
+  video_player: any
+  chewie_audio: any
+  webview_flutter: any
+  flutter_svg: any
+  flutter_layout_grid: any
+#  flutter_math_fork: 0.7.2
+
+screenshots:
+  - description: 'An example of the output produced by flutter_html'
+    path: example/screenshots/flutter_html_screenshot.png
+  - description: 'Continued example of the output produced by flutter_html'
+    path: example/screenshots/flutter_html_screenshot1.png
+  - description: 'Continued example of the output produced by flutter_html'
+    path: example/screenshots/flutter_html_screenshot2.png
+  - description: 'Continued example of the output produced by flutter_html'
+    path: example/screenshots/flutter_html_screenshot3.png
+  - description: 'Another example of the output produced by flutter_html'
+    path: example/screenshots/flutter_html_readme_screenshot.png
+
+funding:
+  - https://opencollective.com/flutter_html
+
+topics:
+  - html
+  - css
+  - widgets
+  - layout
+  - flutter_html

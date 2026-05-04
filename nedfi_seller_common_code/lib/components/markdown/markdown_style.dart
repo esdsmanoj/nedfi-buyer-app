@@ -1,0 +1,58 @@
+// Copyright 2016 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+import 'package:flutter/material.dart';
+
+import 'markdown.dart';
+import 'markdown_style_raw.dart';
+
+/// Style used for rendering markdown formatted text using the [MarkdownBody]
+/// widget.
+class MarkdownStyle extends MarkdownStyleRaw {
+  /// Creates a [MarkdownStyle] from the [TextStyle]s in the provided [theme].
+  MarkdownStyle.defaultFromTheme(ThemeData theme)
+      : super(
+            a: new TextStyle(color: Colors.blue[500]),
+            p: theme.textTheme.bodySmall!,
+            code: TextStyle(color: Colors.grey[700], fontFamily: "monospace", fontSize: (theme.textTheme.bodySmall?.fontSize!)! * 0.85),
+            h1: theme.textTheme.headlineLarge!,
+            h2: theme.textTheme.headlineSmall!,
+            h3: theme.textTheme.displaySmall!,
+            h4: theme.textTheme.bodySmall!,
+            h5: theme.textTheme.bodySmall!,
+            h6: theme.textTheme.bodySmall!,
+            em: new TextStyle(fontStyle: FontStyle.italic),
+            strong: new TextStyle(fontWeight: FontWeight.bold),
+            blockquote: theme.textTheme.bodyMedium!,
+            blockSpacing: 8.0,
+            listIndent: 32.0,
+            blockquotePadding: 8.0,
+            blockquoteDecoration: BoxDecoration(color: Colors.blue[100], borderRadius: new BorderRadius.circular(2.0)),
+            codeblockPadding: 8.0,
+            codeblockDecoration: new BoxDecoration(color: Colors.grey[100], borderRadius: new BorderRadius.circular(2.0)));
+
+  /// Creates a [MarkdownStyle] from the [TextStyle]s in the provided [theme].
+  /// This style uses larger fonts for the headings than in
+  /// [MarkdownStyle.defaultFromTheme].
+  MarkdownStyle.largeFromTheme(ThemeData theme)
+      : super(
+            a: new TextStyle(color: Colors.blue[500]),
+            p: theme.textTheme.bodySmall!,
+            code: new TextStyle(color: Colors.grey[700], fontFamily: "monospace", fontSize: theme.textTheme.bodySmall!.fontSize! * 0.85),
+            h1: theme.textTheme.headlineLarge!,
+            h2: theme.textTheme.headlineMedium!,
+            h3: theme.textTheme.headlineMedium!,
+            h4: theme.textTheme.headlineLarge!,
+            h5: theme.textTheme.headlineMedium!,
+            h6: theme.textTheme.bodySmall!,
+            em: TextStyle(fontStyle: FontStyle.italic),
+            strong: TextStyle(fontWeight: FontWeight.bold),
+            blockquote: theme.textTheme.bodySmall!,
+            blockSpacing: 8.0,
+            listIndent: 32.0,
+            blockquotePadding: 8.0,
+            blockquoteDecoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(2.0)),
+            codeblockPadding: 8.0,
+            codeblockDecoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(2.0)));
+}
