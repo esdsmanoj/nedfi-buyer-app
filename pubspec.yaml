@@ -1,0 +1,47 @@
+name: NERACE_BUYER
+description: NERACE BUYER
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  buyer_common_code:
+    path: ./buyer_common_code
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/locale/localization_en.json
+    - assets/locale/localization_mr.json
+    - data/flutter1.db
+    - assets/weather_icons/
+    - assets/weather_icons/day/
+    - assets/weather_icons/night/
+
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Regular.ttf
+        - asset: assets/fonts/WorkSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/WorkSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/WorkSans-Bold.ttf
+          weight: 700
